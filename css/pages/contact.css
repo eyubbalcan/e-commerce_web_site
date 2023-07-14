@@ -1,0 +1,33 @@
+.contanct .contanct-bottom {
+  margin: 30px 0;
+}
+
+.contanct-bottom .contact-title {
+  width: 75%;
+}
+
+.contanct-bottom .contact-title h4 {
+  color: red;
+  font-weight: 500;
+}
+
+.contanct-bottom .contact-title h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.contanct-bottom .contact-title p {
+  font-size: 14px;
+}
+
+.contanct-bottom .contact-elements {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  gap: 100px;
+}
+
+.contanct-bottom .contact-form {
+  display: flex;
+  flex-wrap: wrap;
+}
