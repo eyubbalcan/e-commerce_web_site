@@ -31,6 +31,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 .container {
@@ -83,7 +84,7 @@ textarea {
 }
 
 input[type="text"],
-input[type="password"],
+input[type="pasword"],
 input[type="email"],
 input[type="number"],
 textarea {

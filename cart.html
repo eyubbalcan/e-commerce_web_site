@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conntact</title>
+    <title>Cart</title>
     <!--! Boostrap Icon CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/main.css">
@@ -35,7 +35,7 @@
                         <nav class="navigation">
                             <ul class="menu-list">
                                 <li class="menu-list-item">
-                                    <a href="index.html" class="menu-link">
+                                    <a href="index.html" class="menu-link active">
                                         Home
                                         <i class="bi bi-chevron-down"></i>
                                     </a>
@@ -142,7 +142,7 @@
                                     </a>
                                 </li>
                                 <li class="menu-list-item">
-                                    <a href="contact.html" class="menu-link active">
+                                    <a href="contact.html" class="menu-link">
                                         Contact
                                     </a>
                                 </li>
@@ -152,7 +152,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-right-links">
-                            <a href="#" class="header-account">
+                            <a href="account.html" class="header-account">
                                 <i class="bi bi-person"></i>
                             </a>
                             <button class="toggle-buton">
@@ -175,7 +175,6 @@
         </div>
     </header>
     <!--! header end -->
-
     <!--! modal search start -->
     <div class="modal-search">
         <div class="modal-wrapper">
@@ -215,78 +214,34 @@
     </div>
     <!--! modal search end -->
 
+    <!--! cart start  -->
+    <section class="cart-page">
+        <div class="container">
+            <div class="cart-page-wrapper">
+                <div class="cart-form">
+                    <div class="free-progress-bar">
+                        <p class="progress-bar-title">
+                            Add <strong>$161.00</strong> to cart and get free shipping!
+                        </p>
+                        <div class="progress-bar">
+                            <span class="progress"></span>
+                        </div>
+                        <div class="shop-table-wrapper">
+                            <div class="shop-table">
+                                <div class="thead">
+                                    <th class="product-thumbnail">&nbsp;</th>
+                                    <th class="product-thumbnail">&nbsp;</th>
+                                    <th class="product-name"></th>
+                                    <th class="product-price"></th>
+                                    <th class="product-	quantity"></th>
+                                    <th class="product-subtotal"></th>
 
-    <!--! contact start -->
-    <section class="contanct">
-        <div class="contanct-top">
-            <div class="contact-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3184.1759716965885!2d37.38469157556988!3d37.053289522176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531e6cbcff4bffd%3A0x1db849e9b70bfe70!2sSultan%20Selim%2C%2027300%20%C5%9Eahinbey%2FGaziantep!5e0!3m2!1str!2str!4v1689230931243!5m2!1str!2str"
-                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
 
 
-        <div class="contanct-bottom">
-            <div class="container">
-                <div class="contact-titles">
-                    <h4>Contact with us</h4>
-                    <h2>Get In Touch</h2>
-                    <p>In hac habitasse platea dictumst. Pellentesque viverra sem nec orci lacinia, in bibendum urna
-                        mollis. Quisque nunc lacus, varius vel leo a, pretium lobortis metus. Vivamus consectetur
-                        consequat justo.</p>
-                </div>
-                <div class="contact-elements">
-                    <form class="contact-form">
-                        <div class="">
-                            <label>
-                                Your Name
-                                <span>*</span>
-                            </label>
-                            <input type="text" required>
-                        </div>
-                        <div class="">
-                            <label>
-                                Your email
-                                <span>*</span>
-                            </label>
-                            <input type="text" required>
-                        </div>
-                        <div class="">
-                            <label>
-                                Subject
-                                <span>*</span>
-                            </label>
-                            <input type="text" required>
-                        </div>
-                        <div class="">
-                            <label>
-                                Your message
-                                <span>*</span>
-                            </label>
-                            <textarea id="author" name="author" type="text" value="" size="30" required=""></textarea>
-                        </div>
-                        <button class="btn btn-sm form-button">Send Message</button>
-                    </form>
-                    <div class="contact-info">
-                        <div class="contact-info-item">
-                            <div class="contact-info-texts">
-                                <strong> Clotya Store</strong>
-                                <p class="contact-street">
-                                    Clotya Store
-                                    Germany — 785 15h Street, Office 478/B Green Mall Berlin, De 81566</p>
-                                <a href="tel:Phone: +1 1234 567 88">Phone: +1 1234 567 88</a>
-                                <a href="mailto:Email: contact@example.com">Email: contact@example.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-info-item">
-                            <div class="contact-info-texts">
-                                <strong> Opening Hours </strong>
-                                <p class="contact-date">
-
-                                    Monday - Friday : 9am - 5pm</p>
-                                <p>Weekend Closed</p>
+                                </div>
+                                <div class="tbody-wrapper">
+                                    <tr class="cart-item"></tr>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -294,10 +249,7 @@
             </div>
         </div>
     </section>
-
-
-    <!--! contact end -->
-
+    <!--! cart end  -->
 
 
     <!--! policy start  -->
@@ -336,6 +288,7 @@
         </div>
     </section>
     <!--! policy end  -->
+
 
     <!--! footer start  -->
     <footer class="footer">

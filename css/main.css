@@ -1,5 +1,4 @@
 /*! global css*/
-
 @import url(base.css);
 
 /*! layout css */
@@ -13,10 +12,10 @@
 @import url(components/product-item.css);
 @import url(components/campaign-item.css);
 @import url(components/blog-item.css);
-@import url(components/brand-item.css);
 @import url(components/campaign-single.css);
-@import url(components/policy-item.css);
 
 /*!pages */
 @import url(pages/home.css);
 @import url(pages/contact.css);
+@import url(pages/account.css);
+@import url(pages/cart.css);
