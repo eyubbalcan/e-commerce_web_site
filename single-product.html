@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>E-Commerce</title>
     <!--! Boostrap Icon CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/main.css">
@@ -175,6 +175,7 @@
         </div>
     </header>
     <!--! header end -->
+
     <!--! modal search start -->
     <div class="modal-search">
         <div class="modal-wrapper">
@@ -214,109 +215,58 @@
     </div>
     <!--! modal search end -->
 
-    <!--! cart start  -->
-    <section class="cart-page">
+    <!--! single product start -->
+    <section class="single-product">
         <div class="container">
-            <div class="cart-page-wrapper">
-                <form class="cart-form">
-                    <div class="free-progress-bar">
-                        <p class="progress-bar-title">
-                            Add <strong>$161.00</strong> to cart and get free shipping!
-                        </p>
-                        <div class="progress-bar">
-                            <span class="progress"></span>
-                        </div>
-                    </div>
-                    <div class="shop-table-wrapper">
-                        <table class="shop-table">
-                            <thead>
-                                <th class="product-thumbnail">&nbsp;</th>
-                                <th class="product-thumbnail">&nbsp;</th>
-                                <th class="product-name">Product</th>
-                                <th class="product-price">Price</th>
-                                <th class="product-quantity">Quantity</th>
-                                <th class="product-subtotal">Subtotal</th>
-                            </thead>
-                            <tbody class="cart-wrapper">
-                                <tr class="cart-item">
-                                    <td></td>
-                                    <td class="cart-image">
-                                        <img src="img/products/product2/2.png" alt="">
-                                        <i class="bi bi-x delete-cart"></i>
-                                    </td>
-                                    <td>Analogue Resin Strap</td>
-                                    <td>$108.00</td>
-                                    <td>1</td>
-                                    <td>$108.00</td>
-                                </tr>
-                                <tr class="cart-item">
-                                    <td></td>
-                                    <td class="cart-image">
-                                        <img src="img/products/product2/2.png" alt="">
-                                        <i class="bi bi-x delete-cart"></i>
-                                    </td>
-                                    <td>Analogue Resin Strap</td>
-                                    <td>$108.00</td>
-                                    <td>1</td>
-                                    <td>$108.00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="actions-wrapper">
-                            <div class="coupon">
-                                <input type="text" class="input-text" placeholder="Coupon code">
-                                <button class="btn">Apply Coupon</button>
-                            </div>
-                            <div class="update-cart">
-                                <button class="btn">Update Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <div class="cart-collaterals">
-                    <div class="cart-totals">
-                        <h2 class="">Cart totals</h2>
-                        <table>
-                            <tbody>
-                                <tr class="cart-subtotal">
-                                    <th>Subtotal</th>
-                                    <td>
-                                        <span>$138.00</span>
-                                    </td>
-                                </tr>
-                                <tr class="cart-shipping">
-                                    <th>Shipping</th>
-                                    <td>
-                                        <ul>
-                                            <li>
-                                                <label>Fast Cargo: $15.00
-                                                    <input type="checkbox">
-                                                </label>
-                                            </li>
-                                            <li><a href="#">
-                                                    Change Address
-                                                </a></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr class="cart-total">
-                                    <th>Total</th>
-                                    <td>
-                                        <strong>$138.00</strong>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <div class="checkout">
-                            <button class="btn btn-lg">Proceed to checkout</button>
-                        </div>
-                    </div>
+            <div class="single-product-wrapper">
+                <!-- breadcrump start -->
+                <div class="single-topbar">
+                    <nav class="breadcrumb">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Man</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li>Basic Colored Sweatpants With Elastic Hems</li>
+                        </ul>
+                    </nav>
                 </div>
+                <!-- breadcrump end -->
+
+                <!-- site main start -->
+                <div class="single-content">
+                    <main class="site-main">
+                        <div class="product-gallery">
+                            <div class="single-image-wrapper">
+                                <img src="img/products/product2/1.png">
+                            </div>
+                            <div class="product-thumb">
+                                <ol class="gallery-thumbs">
+                                    <li>
+                                        <img src="img/products/product2/1.png" alt=""  class="img-fluid" >
+                                    </li>
+                                    <li>
+                                        <img src="img/products/product2/2.png" alt=""  class="img-fluid">
+                                    </li>
+                                    <li>
+                                        <img src="img/products/product2/3.png" alt=""  class="img-fluid">
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            
+                        </div>
+                    </main>
+                </div>
+                <!-- site main end -->
+
+
             </div>
         </div>
     </section>
-    <!--! cart end  -->
+
+    <!--! single product end -->
+
 
     <!--! policy start  -->
     <section class="policy">
@@ -354,7 +304,6 @@
         </div>
     </section>
     <!--! policy end  -->
-
 
     <!--! footer start  -->
     <footer class="footer">
@@ -540,7 +489,6 @@
     </footer>
     <!--! footer end  -->
 
-    </div>
 </body>
 
 
