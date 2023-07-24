@@ -8,6 +8,12 @@
   font-weight: 600;
 }
 
+.section-title p {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
 /*! categories start  */
 .categories {
   margin: 40px 0;
@@ -94,7 +100,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 25px 0;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .policy .policy-list .policy-item {
