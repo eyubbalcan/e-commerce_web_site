@@ -1,11 +1,13 @@
-export function product1(){
+const productsContainer = document.getElementById("product-list");
+
+
+export function product1() {
   const config = {
-    type: "carousel",
+    // type: "carousel", // "carousel" olarak belirtiyorum, daha sonra kullanabilirsin.
     perView: 4,
-    gap:4,
-    // autoplay:3000
-  
-  breakpoints: {
+    gap: 4,
+    // autoplay: 3000,
+    breakpoints: {
       992: {
         perView: 3,
       },
@@ -16,11 +18,11 @@ export function product1(){
         perView: 1,
       },
     },
-  }
-  
-  
-  new Glide(".product-carousel", config).mount();
+  };
+
+  productsContainer && new Glide(".product-carousel", config).mount();
 }
+
 
 const config2 = {
   type: "carousel",
@@ -39,7 +41,8 @@ breakpoints: {
       perView: 1,
     },
   },
-}
+};
 
 
-new Glide(".product-carousel2", config2).mount();
+productsContainer && new Glide(".product-carousel2", config2).mount();
+

@@ -80,8 +80,8 @@
   font-weight: 600;
 }
 
-.cart-form table thead .product-quantity,
-.cart-form table thead .product-subtotal {
+.cart-form table .product-quantity,
+.cart-form table .product-subtotal {
   text-align: center;
 }
 
