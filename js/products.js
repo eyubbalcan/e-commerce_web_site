@@ -1,38 +1,50 @@
 import { product1 } from "./glide.js";
 
+let products = [];
+let cart = [];
 
-
-
-let products=[];
-let cart =[];
-
-cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
-
+cart = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart"))
+  : [];
 
 function addToCart() {
   const cartItems = document.querySelector(".header-cart-count");
   const buttons = [...document.getElementsByClassName("add-to-cart")]; //spread (...) operatörü  nodelisti arraya dönüşütürür
   buttons.forEach((button) => {
-    const inCart=cart.find((item)=> item.id === Number(button.dataset.id));
-    if(inCart){
-      button.setAttribute("disabled", "disabled");// setAttribute html içeriğini değiştirir
-    }else{
+    const inCart = cart.find((item) => item.id === Number(button.dataset.id));
+    if (inCart) {
+      button.setAttribute("disabled", "disabled"); // setAttribute html içeriğini değiştirir
+    } else {
       button.addEventListener("click", function (e) {
-      e.preventDefault();// yeniletmiyor sürekli ekleme yaptırıyor Ozan abi anlattı (hayat kurtarır)
-      const id = e.target.dataset.id;
-      const findProduct = products.find((product) => product.id === Number(id));
-      cart.push({ ...findProduct, quantity: 1 }); 
-      localStorage.setItem("cart", JSON.stringify(cart));
-      button.setAttribute("disabled", "disabled");
-       cartItems.innerHTML = cart.length;
-    });}
+        e.preventDefault(); // yeniletmiyor sürekli ekleme yaptırıyor Ozan abi anlattı (hayat kurtarır)
+        const id = e.target.dataset.id;
+        const findProduct = products.find(
+          (product) => product.id === Number(id)
+        );
+        cart.push({ ...findProduct, quantity: 1 });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        button.setAttribute("disabled", "disabled");
+        cartItems.innerHTML = cart.length;
+      });
+    }
   });
 }
 
-
+function productRoute() {
+  const productLink = document.getElementsByClassName("product-link");
+  Array.from(productLink).forEach((button) => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      const id = e.target.dataset.id;
+      localStorage.setItem("productId", JSON.stringify(id));
+      window.location.href="single-product.html";
+    });
+  });
+}
 
 function productsFunc() {
- products = localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products"))
+  products = localStorage.getItem("products")
+    ? JSON.parse(localStorage.getItem("products"))
     : [];
   const productsContainer = document.getElementById("product-list");
 
@@ -77,7 +89,7 @@ function productsFunc() {
           <button>
             <i class="bi bi-heart-fill"></i>
           </button>
-          <a href="#">
+          <a href="#" class="product-link" data-id=${item.id}>
             <i class="bi bi-eye-fill"></i>
           </a>
           <a href="#">
@@ -88,19 +100,15 @@ function productsFunc() {
     </li>
     `;
 
-   
-    productsContainer ? (productsContainer.innerHTML = results) :"";
+    productsContainer ? (productsContainer.innerHTML = results) : "";
     addToCart();
   });
   product1();
+
+  productRoute();
 }
 
 export default productsFunc;
-
-
-
-
-
 
 // 1. İlk olarak, `products` ve `cart` adında iki boş dizi tanımlanmıştır. Bu diziler, ürünlerin ve sepetin tutulacağı veri yapılardır.
 
